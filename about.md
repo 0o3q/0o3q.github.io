@@ -9,14 +9,10 @@ title: "About"
 <a href="https://twitter.com/mingw03">Twitter</a>
 <a href="https://www.instagram.com/minkyu_0o3">Instagram</a>
 
----
-
-
+<br/>
 ## Profile
 <strong>Ajou University</strong><br/>
 \- Cyber Security | 2022 ~
-
----
 
 <br/>
 ## Awards
@@ -25,13 +21,9 @@ title: "About"
 <strong>제 2회 모의해킹 경진대회 우리콘</strong><br/>
 \- 최우수상
 
----
-
-
+<br/>
 ## Education
 <strong>KITRI BoB(Best of the Best) 11th 보안컨설팅 트랙</strong><br/>
-
----
 
 <br/>
 ## Project
