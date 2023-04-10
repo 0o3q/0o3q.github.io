@@ -35,6 +35,8 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+pagination: 10
+pagination_path: "/page:num/"
 
 exclude:
   - .jekyll-cache
