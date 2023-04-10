@@ -4,7 +4,7 @@
       "title"    : "테스트용 새로운 포스트 test",
       "description" : "",
       "category" : "",
-      "tags"     : "",
+      "tags"     : "test",
       "url"      : "/2023/04/10/new-post",
       "date"     : "2023-04-10 00:00:00 +0900"
     } 
