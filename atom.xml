@@ -4,7 +4,7 @@
  <title>0o3q</title>
  <link href="https://0o3q.github.io/atom.xml" rel="self"/>
  <link href="https://0o3q.github.io/"/>
- <updated>2023-04-11T02:30:10+09:00</updated>
+ <updated>2023-04-11T02:31:42+09:00</updated>
  <id>https://0o3q.github.io</id>
  <author>
    <name>0o3q</name>
@@ -21,7 +21,7 @@
 
 &lt;p&gt;블로그
 test
-&lt;img src=&quot;https://0o3q.github.io/images/2023-04-10-new_post/test.svg&quot; alt=&quot;Image test&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://0o3q.github.io/images/2023-04-10-new_post/test.svg&quot; alt=&quot;Image test&quot; width=&quot;50&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
 </content>
  </entry>
  
