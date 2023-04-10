@@ -20,8 +20,8 @@
             "id": "https://0o3q.github.io/2023/04/10/new-post",
             "title": "테스트용 새로운 포스트 test",
             "summary": null,
-            "content_text": "블로그 첫 제작 기념 테스트 블로그 test블로그test",
-            "content_html": "<h4 id=\"블로그-첫-제작-기념-테스트-블로그-test\">블로그 첫 제작 기념 테스트 블로그 test</h4><p>블로그test<img src=\"https://0o3q.github.io/images/2023-04-10-new_post/test.svg\" alt=\"Image test\" width=\"10\" height=\"10\" /></p>",
+            "content_text": "블로그 첫 제작 기념 테스트 블로그 test블로그testprint(\"Hello World\")",
+            "content_html": "<h4 id=\"블로그-첫-제작-기념-테스트-블로그-test\">블로그 첫 제작 기념 테스트 블로그 test</h4><hr /><p>블로그</p><p>test<img src=\"https://0o3q.github.io/images/2023-04-10-new_post/test.svg\" alt=\"Image test\" width=\"10\" height=\"10\" /></p><div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">print</span><span class=\"p\">(</span><span class=\"s\">\"Hello World\"</span><span class=\"p\">)</span></code></pre></div></div>",
             "url": "https://0o3q.github.io/2023/04/10/new-post",
             
             

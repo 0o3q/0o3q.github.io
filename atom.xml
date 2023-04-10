@@ -4,7 +4,7 @@
  <title>0o3q</title>
  <link href="https://0o3q.github.io/atom.xml" rel="self"/>
  <link href="https://0o3q.github.io/"/>
- <updated>2023-04-11T02:32:27+09:00</updated>
+ <updated>2023-04-11T02:36:07+09:00</updated>
  <id>https://0o3q.github.io</id>
  <author>
    <name>0o3q</name>
@@ -18,10 +18,15 @@
    <updated>2023-04-10T00:00:00+09:00</updated>
    <id>https://0o3q.github.io/2023/04/10/new_post</id>
    <content type="html">&lt;h4 id=&quot;블로그-첫-제작-기념-테스트-블로그-test&quot;&gt;블로그 첫 제작 기념 테스트 블로그 test&lt;/h4&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;블로그
-test
+&lt;p&gt;블로그&lt;/p&gt;
+
+&lt;p&gt;test
 &lt;img src=&quot;https://0o3q.github.io/images/2023-04-10-new_post/test.svg&quot; alt=&quot;Image test&quot; width=&quot;10&quot; height=&quot;10&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </content>
  </entry>
  
