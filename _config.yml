@@ -2,7 +2,7 @@ site: 0o3q
 title: 0o3q
 greetings: 0o3q's Blog 👋
 description: >-
-  대학생의 보안일지
+  대학생의 보안블로그
 lang: ko
 timezone:  Asia/Seoul
 repo: https://github.com/DavideBri/Gesko # site repo [optional]
