@@ -2,12 +2,11 @@ site: 0o3q
 title: 0o3q
 greetings: 0o3q's Blog 👋
 description: >-
-  대학생의 보안 블로그
+  그냥 대학생의 보안 블로그
 lang: ko
 timezone:  Asia/Seoul
 repo: 0o3q/0o3q.github.io # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
-discus-identifier: 0o3q # replace with your disqus shortname
 
 author:
   name: 0o3q
