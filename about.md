@@ -11,20 +11,20 @@ title: "About"
 
 <br/>
 ## Profile
-<strong>Ajou University</strong><br/>
-\- Cyber Security | 2022 ~
+- <strong>Ajou University</strong><br/>
+    \- Cyber Security | 2022 ~
 
 <br/>
 ## Awards
 
 ### 2022
-<strong>제 2회 모의해킹 경진대회 우리콘</strong><br/>
-\- 최우수상
+- <strong>제 2회 모의해킹 경진대회 우리콘</strong><br/>
+    \- 최우수상
 
 <br/>
 ## Education
-<strong>KITRI BoB(Best of the Best) 11th 보안컨설팅 트랙</strong><br/>
+- <strong>KITRI BoB(Best of the Best) 11th 보안컨설팅 트랙</strong><br/>
 
 <br/>
 ## Project
-<strong>KITRI BoB(Best of the Best) 11th 전자상거래 플랫폼 취약점 분석</strong><br/>
+- <strong>KITRI BoB(Best of the Best) 11th 전자상거래 플랫폼 취약점 분석</strong><br/>
