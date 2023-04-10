@@ -1,29 +1,29 @@
-site: Gesko
-title: Gesko
-greetings: Hi 👋
+site: 0o3q
+title: 0o3q
+greetings: 0o3q's Blog 👋
 description: >-
-  just a minimalist, personal blog
-lang: en-US
-timezone:  Europe/Rome
+  대학생의 보안일지
+lang: ko
+timezone:  Asia/Seoul
 repo: https://github.com/DavideBri/Gesko # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
 discus-identifier: powex # replace with your disqus shortname
 
 author:
-  name: gesko
+  name: 0o3q
   bio: just a minimalist, personal blog
   userpicture: 
-  username: # general username
-  github: # github username
-  twitter: # twitter username
-  email: your-email@email.com # email adress
+  username: 0o3q # general username
+  github: 0o3q # github username
+  twitter: mingw03 # twitter username
+  email: minkyu2045@ajou.ac.kr # email adress
 
 # Font Settings
 googlewebfonts: family=Play:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
 
 # URL settings
-url: "https://DavideBri.github.io" # Domain Name of host. [username].github.io for github pages
-baseurl: "/Gesko" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
+url: "https://0o3q.github.io" # Domain Name of host. [username].github.io for github pages
+baseurl: "" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
 permalink: pretty
 
 # local
