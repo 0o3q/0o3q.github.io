@@ -59,6 +59,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-relative-links
+  - jekyll-toc
 
 collections:
   pages:
