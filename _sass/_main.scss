@@ -793,3 +793,15 @@ $link-color: var(--link-color);
     
   }
 }
+
+@font-face {
+  font-family: 'CBNUJIKJI';
+  font-weight: normal;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/chungbuk/CBNUJIKJI.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/chungbuk/CBNUJIKJI.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/chungbuk/CBNUJIKJI.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/chungbuk/CBNUJIKJI.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/chungbuk/CBNUJIKJI.ttf') format("truetype");
+  font-display: swap;
+} 
