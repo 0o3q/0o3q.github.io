@@ -2,12 +2,12 @@ site: 0o3q
 title: 0o3q
 greetings: 0o3q's Blog 👋
 description: >-
-  대학생의 보안블로그
+  대학생의 보안 블로그
 lang: ko
 timezone:  Asia/Seoul
-repo: https://github.com/DavideBri/Gesko # site repo [optional]
+repo: 0o3q/0o3q.github.io # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
-discus-identifier: powex # replace with your disqus shortname
+discus-identifier: 0o3q # replace with your disqus shortname
 
 author:
   name: 0o3q
