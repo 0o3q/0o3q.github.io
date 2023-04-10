@@ -2,7 +2,7 @@
 layout: about
 title: "About"
 ---
----
+
 ## Contact
 <a href="mailto:minkyu2045@ajou.ac.kr">Email</a>
 <a href="https://github.com/0o3q">Github</a>
@@ -14,6 +14,7 @@ title: "About"
 ## Profile
 <strong>Ajou University</strong><br/>
 \- Cyber Security | 2022 ~
+
 ---
 
 ## Awards
@@ -21,10 +22,12 @@ title: "About"
 ### 2022
 <strong>제 2회 모의해킹 경진대회 우리콘</strong><br/>
 \- 최우수상
+
 ---
 
 ## Education
 <strong>KITRI BoB(Best of the Best) 11th 보안컨설팅 트랙</strong><br/>
+
 ---
 
 ## Project
