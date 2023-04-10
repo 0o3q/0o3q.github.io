@@ -1,6 +1,7 @@
 ---
 layout: about
 title: "About"
+toc: true
 ---
 
 ## Contact
