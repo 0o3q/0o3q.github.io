@@ -34,7 +34,8 @@ html {
 
 html,
 html[data-theme="light"] {
-	--text-font: Play;
+  font-family: 'CBNUJIKJI';
+	// --text-font: Play;
 	--source-code-font: Source Code Pro;
 	--very-light-text-color: rgb(222, 222, 222);
 	--light-text-color: rgb(89, 183, 255);
@@ -98,7 +99,8 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-	--text-font: Play;
+  font-family: 'CBNUJIKJI';
+	// --text-font: Play;
 	--source-code-font: Source Code Pro;
 	--very-light-text-color: #EEE;
 	--light-text-color: #c4bbf0;
@@ -793,15 +795,3 @@ $link-color: var(--link-color);
     
   }
 }
-
-@font-face {
-  font-family: 'CBNUJIKJI';
-  font-weight: normal;
-  font-style: normal;
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/chungbuk/CBNUJIKJI.eot');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/chungbuk/CBNUJIKJI.eot?#iefix') format('embedded-opentype'),
-       url('https://cdn.jsdelivr.net/gh/webfontworld/chungbuk/CBNUJIKJI.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/gh/webfontworld/chungbuk/CBNUJIKJI.woff') format('woff'),
-       url('https://cdn.jsdelivr.net/gh/webfontworld/chungbuk/CBNUJIKJI.ttf') format("truetype");
-  font-display: swap;
-} 
