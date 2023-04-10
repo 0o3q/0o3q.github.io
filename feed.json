@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "0o3q",
+    "home_page_url": "https://0o3q.github.io/",
+    "feed_url": "https://0o3q.github.io/feed.json",
+    "description": "대학생의 보안일지",
+    "icon": "https://0o3q.github.io/apple-touch-icon.png",
+    "favicon": "https://0o3q.github.io/favicon.ico",
+    "expired": false,
+    
+    "author":  {
+        "name": "0o3q",
+        "url": null,
+        "avatar": null
+    },
+    
+"items": [
+    
+    ]
+}
