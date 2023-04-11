@@ -24,7 +24,7 @@ tags: 해시 블록체인 비트코인
 
 블록체인은 일반적으로 다음과 같은 구조를 띈다.
 
-![Image blockchain_structure]({{site.url}}/images/2023-04-13-blockchain_wih_bitcoin/blockchain_structure.png)
+![Image blockchain_structure]({{site.url}}/images/2023-04-13-blockchain-and-bitcoin/blockchain_structure.png)
 
 블록체인은 블록 1에서부터 거래를 기록하게 되며 특정한 조건인 합의 알고리즘을 통해 블록 1에 더이상 거래를 기록할 수 없도록 블록을 동결하고 완성시킨다.
 블록 1에 기록된 정보를 대표하는 해시값 Hash1을 생성하고 Hash1은 다음 블록인 블록 2에 기록한다. 블록 2도 특정한 조건에 만족하면 블록 1과 같은 과정으로 거치고 그 다음 블록인 블록 3에 거래를 기록하는 방식으로 진행된다. 이런식으로 구성되는 블록체인은 거래에 참여하는 모든 당사자들에게 배포된다.
@@ -33,7 +33,7 @@ tags: 해시 블록체인 비트코인
 
 블록체인을 구성하는 블록의 일반적인 구조는 다음과 같다.
 
-![Image block_structure]({{site.url}}/images/2023-04-13-blockchain_wih_bitcoin/block_structure.png)
+![Image block_structure]({{site.url}}/images/2023-04-13-blockchain-and-bitcoin/block_structure.png)
 
 블록은 블록헤더(block header)와 블록몸체(block body)로 이루어져 있다. 
 블록몸체에는 거래를 기록하며, 블록헤더에는 이전 블록헤더의 해시값, 현재 블록에 기록되어 있는 전체 거래에 대한 해시값 그리고 기타 정보들이 기록되어 있다. 블록헤더의 기타 정보 부분은 블록체인의 종류에 따라 기록되는 데이터가 다르다.
@@ -160,7 +160,7 @@ difficulty의 개수에 따라 0의 개수가 정해지며 difficulty가 커지�
 
 100개의 노드(각 노드는 동일한 컴퓨팅 파워를 가지고 있다고 가정한다.)가 블록체인 네트워크에 참여하고 있고, 현재 n번째 블록까지 생성된 상태이다. 100개의 노드 중 10개의 노드가 n+1번째 블록의 거래 내용을 조작한다고 할 때, 작업증명의 효과로 다음과 같은 상황이 된다.
 
-![Image pow_effect]({{site.url}}/images/2023-04-13-blockchain_wih_bitcoin/pow_effect.png)
+![Image pow_effect]({{site.url}}/images/2023-04-13-blockchain-and-bitcoin/pow_effect.png)
 
 - 조작된 n+1번째 블록 내용을 기반으로 100개의 노드가 10분간 풀어야할 해시캐시 문제를 10개 노드가 해결해야한다.
 - 그동안 정상적인 n+1번째 블록 내용을 기반으로 100개의 노드가 10분간 풀어야할 해시캐시 문제를 90개의 노드가 해결하고 있는 중이다.
@@ -172,7 +172,7 @@ difficulty의 개수에 따라 0의 개수가 정해지며 difficulty가 커지�
 
 이럼에도 불구라고 1개의 노드가 조작된 블록에 해시캐시 문제를 해결하고 모든 노드에 배표하게 된다면, 조작된 블로깅 포함된 브록체인의 기링가 정상적인 블록체인의 길이보다 짧을 것이다.
 
-![Image pow_effect2]({{site.url}}/images/2023-04-13-blockchain_wih_bitcoin/pow_effect2.png)
+![Image pow_effect2]({{site.url}}/images/2023-04-13-blockchain-and-bitcoin/pow_effect2.png)
 
 블록체인 시스템은 2개이상의 블록체인이 배포될때 길이가 딘 블록체인의 채캑을 원칙으로 하고 있다.
 
@@ -182,7 +182,7 @@ difficulty의 개수에 따라 0의 개수가 정해지며 difficulty가 커지�
 
 비트코인의 즐록 구조는 블록체인의 일반적인 구종와 동일하다. 실제 비트코인의 블록에는 다음의 그림과 같은 정보들로 구성되어 있다.
 
-![Image bitblock_structure]({{site.url}}/images/2023-04-13-blockchain_wih_bitcoin/bitblock_structure.png)
+![Image bitblock_structure]({{site.url}}/images/2023-04-13-blockchain-and-bitcoin/bitblock_structure.png)
 
 위 그림처럼 매직넘버와 블록 크기를 나타내는 필드를 제외하면 비트코인 블록은 블록헤더와 블록몸체로 구성되어 있는 것을 볼 수 있다. 블록헤더는 총 6개의 필드로 구성되어 있고, 블록몸체에는 거래 개수와 거래 정보가 담겨있다.
 
@@ -199,7 +199,7 @@ Bits는 비트코인 네트워크에 참여하고 있는 노드의 수에 따라
 
 다음은 실제 비트코인의 125,552번째 블록헤더의 내용이다.
 
-![Image 12552bit]({{site.url}}/images/2023-04-13-blockchain_wih_bitcoin/12552bit.png)
+![Image 12552bit]({{site.url}}/images/2023-04-13-blockchain-and-bitcoin/12552bit.png)
 
 위 그림에서 각 필드의 값들은 모두 리클 엔디안 방식으로 메모리에 저장되어 있는 값을 보여주고 있다.
 
@@ -207,7 +207,7 @@ Bits는 비트코인 네트워크에 참여하고 있는 노드의 수에 따라
 리틀 엔디안이란 하뉘 주소의 메모리에 낮은 자리의 숫자를 기록하는 방식이다.
 16진수 0x1b0404cb를 리틀 엔디안으로 메모리에 저장하면 다음과 같다.
 
-![Image little]({{site.url}}/images/2023-04-13-blockchain_wih_bitcoin/little.png)
+![Image little]({{site.url}}/images/2023-04-13-blockchain-and-bitcoin/little.png)
 
 따라서 실제 위 그림의 블록헤더에 저장되어 있는 Bits의 값은 0x1a449b2f, Nounce의 값은 0x9546a142이다.
 
@@ -398,7 +398,7 @@ main()
 BlockHash       = 00000000000000001e8d6829a8a21adc5d38d0a473b144b6765798e61f98bd1d
 +++ Accept this Block`
 
-![Image pow_result]({{site.url}}/images/2023-04-13-blockchain_wih_bitcoin/pow_result.png)
+![Image pow_result]({{site.url}}/images/2023-04-13-blockchain-and-bitcoin/pow_result.png)
 
 비트코인 블록 검색 사이트 아무거나 들어가면 일치하는 것을 볼 수 있다.
 
@@ -434,7 +434,7 @@ A라는 사람이 B라는 사람에게 비트코인을 전송하려면, A의 비
 
 비트코인에 활용되는 공개키 시스템은 비트코인 주소를 만드는 것에도 활용된다. 비트코인 주소는 이 비트코인 주소 소유자의 공개키를 기반으로 만들어진다. 비트코인에 적용되는 전자 서명 알고리즘은 ECDSA이다.
 
-![Image bitaddr]({{site.url}}/images/2023-04-13-blockchain_wih_bitcoin/bitaddr.png)
+![Image bitaddr]({{site.url}}/images/2023-04-13-blockchain-and-bitcoin/bitaddr.png)
 
 1. 개인키를 이용해 ECDSA 공개키를 얻음
 2. EDCSA 공개키의 앞부분에 “0x04”를 추가한다.
@@ -446,7 +446,7 @@ A라는 사람이 B라는 사람에게 비트코인을 전송하려면, A의 비
 
 이 순서를 순서도로 보면
 
-![Image bitaddr2]({{site.url}}/images/2023-04-13-blockchain_wih_bitcoin/bitaddr2.png)
+![Image bitaddr2]({{site.url}}/images/2023-04-13-blockchain-and-bitcoin/bitaddr2.png)
 
 여기서 등장하는  RIPEMD-160 은 1996년 벨기에의 루벤 카톨릭 대학의 COSIC 연구그룹에서 MD4를 기반으로 개발한 해시 알고리즘이다.
 RIPEMD-160은 임의의 입력값에 대해 160비트 크기의 해시값을 출력하며, 32비트 연산에 최적화 되어있다.
