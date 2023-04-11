@@ -4,7 +4,7 @@
  <title>0o3q</title>
  <link href="https://0o3q.github.io/atom.xml" rel="self"/>
  <link href="https://0o3q.github.io/"/>
- <updated>2023-04-12T05:44:27+09:00</updated>
+ <updated>2023-04-12T05:48:01+09:00</updated>
  <id>https://0o3q.github.io</id>
  <author>
    <name>0o3q</name>
@@ -17,7 +17,9 @@
    <link href="https://0o3q.github.io/2023/04/12/hash"/>
    <updated>2023-04-12T00:00:00+09:00</updated>
    <id>https://0o3q.github.io/2023/04/12/hash</id>
-   <content type="html">&lt;p&gt;&lt;strong&gt;해시함수(hash function)&lt;/strong&gt;란 임의의 길이를 가진 데이터를 고정된 길이의 데이터로 매핑되는 함수이다. 
+   <content type="html">&lt;h2 id=&quot;해시&quot;&gt;해시&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;해시함수(hash function)&lt;/strong&gt;란 임의의 길이를 가진 데이터를 고정된 길이의 데이터로 매핑되는 함수이다. 
 해시함수의 결과값을 해시값이라고 부른다.&lt;/p&gt;
 
 &lt;p&gt;해시함수는 데이터를 자르거나 치환하거나 위치를 변경하는 방법으로 해시값을 생성하므로, 원본 데이터의 정보를 상실하게 되어 생성된 해시값은 원래 데이터로 복원할 수 없다.&lt;/p&gt;
