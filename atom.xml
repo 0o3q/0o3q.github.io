@@ -4,7 +4,7 @@
  <title>0o3q</title>
  <link href="https://0o3q.github.io/atom.xml" rel="self"/>
  <link href="https://0o3q.github.io/"/>
- <updated>2023-04-12T04:36:55+09:00</updated>
+ <updated>2023-04-12T05:41:36+09:00</updated>
  <id>https://0o3q.github.io</id>
  <author>
    <name>0o3q</name>
@@ -13,11 +13,274 @@
 
  
  <entry>
+   <title>해시</title>
+   <link href="https://0o3q.github.io/2023/04/12/hash"/>
+   <updated>2023-04-12T00:00:00+09:00</updated>
+   <id>https://0o3q.github.io/2023/04/12/hash</id>
+   <content type="html">&lt;h1 id=&quot;해시&quot;&gt;해시&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;해시함수(hash function)&lt;/strong&gt;란 임의의 길이를 가진 데이터를 고정된 길이의 데이터로 매핑되는 함수이다. 
+해시함수의 결과값을 해시값이라고 부른다.&lt;/p&gt;
+
+&lt;p&gt;해시함수는 데이터를 자르거나 치환하거나 위치를 변경하는 방법으로 해시값을 생성하므로, 원본 데이터의 정보를 상실하게 되어 생성된 해시값은 원래 데이터로 복원할 수 없다.&lt;/p&gt;
+
+&lt;p&gt;즉, 해시는 &lt;strong&gt;일방향성&lt;/strong&gt;을 가진다.&lt;/p&gt;
+
+&lt;p&gt;해시값은 2개의 다른 입력값에 대해 특정 확률로 동일한 해시값이 나올 수 있다. 이와 같이 서로 다른 입력값에 대해 동일한 해시값이 나오는 상황을 &lt;strong&gt;해시 충돌&lt;/strong&gt;이라고 한다.&lt;/p&gt;
+
+&lt;p&gt;해시충돌이 발생하는 특정 확률이라는것이 매우 작은 값이므로 통계적으로 큰 의미가 없다고 볼 수 있다.&lt;/p&gt;
+
+&lt;p&gt;128비트 크기의 해시값을 출력하는 해시함수의 경우, 해시충돌이 발생하는 경우는 1/2^128로 매우 작다. 최근에는 256비트, 512비트 크기으ㅟ 해시값을 출력하는 해시함수가 사용되기 때문에 해시충돌 발생 확률은 거의 0에 가깝다.&lt;/p&gt;
+
+&lt;p&gt;해시함수에 입력되는 값이 1바이트만 바뀌어도 해시값은 완전히 다른 값으로 출력된다.&lt;/p&gt;
+
+&lt;h2 id=&quot;md5&quot;&gt;MD5&lt;/h2&gt;
+
+&lt;p&gt;Message-Digest algorithm 5의 약자로 1991년 만들어진 128비트의 길이의 해시값을 출력하는 해시함수이다. MD5는 패스워드의 암호화나 네트워크의 장비인 스위치, 라우터 등에서 장비간 상호 인증을 위해 활요되기도 한다.&lt;/p&gt;
+
+&lt;p&gt;하지만 MD5는 128비트의 다소 작은 크기의 해시값 출력과 알고리즘 자체의 결함도 알려져 있어 최근에는 네트워크로 전송되는 파일의 무결서 ㅇ검증 등에서만 활요오디는 추세이다.&lt;/p&gt;
+
+&lt;p&gt;파이썬에서 MD5해시함수를 사용하려면 파이썬 자체에서 사용하는 hashlib모듈의 md5나 Pycryptodome 모듈에서 제공하는 MD5를 임포트하면 된다.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;hashlib&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;md5&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#or
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Crypto.Hash&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MD5&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;다음은 파이썬의 hashlib 모듈이 제공하는 md5를 이용하여 “I love Python”이라는 메세지에 MD5해시값을 16진수로 출력하는 코드다.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;hashlib&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;md5&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;I love Python&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;md5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;UTF-8&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ret&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hexdigest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ret&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;“I love Python”에 대한 MD5 해시값은 16진수로 다음과 같다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;27eb2f69c24aa5f3503a6ae610f23a83&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;sha&quot;&gt;SHA&lt;/h2&gt;
+
+&lt;p&gt;Secure Hash Algorithm의 약자로 1993년 미국의 NSA가 만들고 미국 국립표준기술연구소에서 표준으로 제정된 해시함수이다. SHA는 SHA-0, SHA-1, SHA-2, SHA-3로 발전되어 왔다. 토렌트로 잘 알려진 P2P 파일 공유 시스템의 원조격인 비트토렌트에서 파일의 무경성이나 인덱싱을 위해 SHA-1 알고리즘이 활용되었고, 패스워드 암호화나 블록체인 등에서는 SHA-2 시리즈 중 SHA-256 알고리즘이 광법위하게 사용된다. 유닉스나 리눅스 계열의 OS에서 사용자의 패스워드 알호화 방법으로 SHA-2 시리즈 중 SHA-512 알고리즘도 사용되고 있다.&lt;/p&gt;
+
+&lt;p&gt;SHA-1과 SHA-2는 알고리즘의 기본이 비슷하며 이론적으로 해시충돌의 가능성이 있다고 알려져 있으나 그 가능성은 거의 0에 수렴한다.&lt;/p&gt;
+
+&lt;p&gt;SHA-3은 SHA-1,2와는 전혀 다은 알고리즘을 가지고 있는 새로운 체계의 SHA알고리즘으로 아직까지 결함이 없다고 알려져 있는 해시 알고리즘이다.&lt;/p&gt;
+
+&lt;p&gt;파이썬은 SHA-2, SHA-3 시리즈의 SHA-256, SHA512 함수를 hashlib 모듈에서 제공한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from hashlib import sha256, sha512
+from hashlib import sha3_256, sha3_512
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;SHA-2 시리즈의 SHA-256을 이용하여 “I love Python”의 해시값을 구하는 코드이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;hashlib&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sha256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sha512&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#from hashlib import sha3_256, sha3_512
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;I love Python&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sha&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sha256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sha&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;UTF-8&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ret&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sha&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hexdigest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ret&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;다음과 같은 결과가 출력된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;24e19c4fdadbd5e4670ae6ed98e2e581afe9ecf81e859da25c065404364ace52&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;변수와 모듈의 이름을 sha3_256으로 바꾸면 똑같이 사용가능하다.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#from hashlib import sha256, sha512
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;hashlib&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sha3_256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sha3_512&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;I love Python&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sha&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sha3_256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sha&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;UTF-8&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ret&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sha&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hexdigest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ret&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;결과. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;844887180f047715cb56bd8ed41039e001b329b005049d22c5a7926ac64c6e4f&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;해시의-활용&quot;&gt;해시의 활용&lt;/h2&gt;
+
+&lt;p&gt;MD5나 SHA외에도 많은 종류의 해시 알고리즘이 있다. 다양한 알고리즘은 여러가지 목적으로 활용되는데, 해시가 대표적으로 활용되는 4가지를 소개한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;해시-인덱스&quot;&gt;해시 인덱스&lt;/h3&gt;
+
+&lt;p&gt;DBMS에서 검색을 위한 인덱스로 해시가 활용되며, DB테이블의 파티셔닝 용도로 사용되기도 한다.
+해시 인덱스는 검색하고자 하는 값의 해시값을 인덱스로 하는 방법인데, 검색하고자 하는 값을 해시함수에 입력하여 결과로 나오는 해시값과 일치하는 인덱스를 찾고, 해당 레코드 위치를 찾아가는 기법이다.&lt;/p&gt;
+
+&lt;p&gt;해시 인덱스는 해시의 특성으로 인해 입력한 값과 동일한 값을 검색하는 동등 비교 겁색에서는 탁월한 성능을 발휘하니지만 범위 검색에서는 매우 비효율적이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;패스워드-암호화&quot;&gt;패스워드 암호화&lt;/h3&gt;
+
+&lt;p&gt;해시는 사용자 계정의 비밀번호 즉, 패스워드를 암호화하는 방법으로 많이 활용된다.
+리눅스 계열의 OS는 사용자의 비밀번호를 MD5나 SHA-256, SHA-512 해시값으로 변환하여 보관한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;데이터-무결성-검증&quot;&gt;데이터 무결성 검증&lt;/h3&gt;
+
+&lt;p&gt;해시값은 어떤 데이터의 지문값으로도 불린다. 2개의 데이터가 있을 때 각각의 데이터에 대한 해시값이 일치하면 이 2개읭 데이터는 완전히 동일한 데이터임을 보장할 수 있다. 따라서 어떤 정보의 위조나 변조가 이루어지면 이 정보의 해시값은 원본 데이터의 해시갑소가 완전히 다른값이 된다.
+해시는 이와 같이 2개의 데이터에 대해 일치성 여부를 검증하는 훌륭한 도로 활용된다.&lt;/p&gt;
+
+&lt;h3 id=&quot;블록체인&quot;&gt;블록체인&lt;/h3&gt;
+
+&lt;p&gt;블록체인 기술은 해시가 광범위하게 활용되고 있다. 블록체인에서는 공개키의 해시값이 은행 계좌번호와 비슷한 용도로 쓰이는데, 이 공개키 해시값을 블록체인 주소라고 부른다.
+블록체인은 블록이라고 부르는 일련의 거랠르 기록한 데이터 덩어리를 체인 형태의 연결한 구조로 되어 있다.블록을 연결하는 데 활용되는 기술이 해시이며, 이 해시는 각 블록의 무결성 검증에도 활용된다.&lt;/p&gt;
+
+&lt;p&gt;암호화폐 중 가장 널리 알려진 것이 비트 코인 인데 비트코인은 작업증명(Proof Of Work: POW)이라는 방법을 통해 하나의 블록을 생성하고 이전 블록과 연결시키며 이 과정에서 비트코인이라는 암호화폐를 발행한다. 비트코인이 수행하는 작업증명이라는 과정은 해시 캐시라 부르는 해시 문제풀이를 수행하는 것이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;데이터-무결성-검증하기&quot;&gt;데이터 무결성 검증하기&lt;/h2&gt;
+
+&lt;p&gt;해시는 2개의 파일 내용의 일치 여부를 확인하는 데 매우 유용하다. 예를 들어, A라는 사람이 어떤 파일을 인터넷을 통해 B라는 사람에게 전달한다. B는 인터넷을 통해 전달받은 파일이 원본 파일과 동일한 것인지를 검증하고 싶다. 이럴 경우 A가 인터넷으로 전송하기 전의 원본 파일에 대한 해시값을 B에게 알려주면 간단히 해결된다.&lt;/p&gt;
+
+&lt;p&gt;데이터 무결성 검증 알고리즘을 구현해보자&lt;/p&gt;
+
+&lt;p&gt;컴퓨터의 메모리 크기가 크다면 파일 내용을 한꺼번에 읽어 이에 대한 SHA256 해시를 구하면 되지만, 현실적으로 이는 매우 비효율적인 방법이다.
+괜찮은 방법은 파일에서 265KB 크기로 정보를 읽어 해시를 업데이트 하는 방법으로 진행하면 된다.&lt;/p&gt;
+
+&lt;p&gt;다음의 그림은 용량이 큰 파일에 대해 해시값을 구하는 방법을 나타낸 것이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://0o3q.github.io/images/2023-04-12-hash/how_hash_value.png&quot; alt=&quot;Image how_hash_value&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;다음 코드에서 getFileHash(filename)은 인자로 입력된 파일을 위 그림과 같이 256KB씩 읽어 SHA256으로 해시할 데이터를 갱신하고 최종 해시값을 구하는 함수이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;hashlib&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sha256&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SHA&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;SIZE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;256&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 256K 정의
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getFileHash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sha&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SHA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;rb&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 파일에서 256KB 만큼 읽어온다.
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;sha&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#읽은 256KB 정보만큼 해시할 데이터 갱신
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 파일에서 그 다음 256KB 읽음
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;hashval&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sha&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;digest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 최종 해시값 계산
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hashval&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;file1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;./plain.txt&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getFileHash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;다음은 두 파일의 무결성을 검증하는 코드이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;hashlib&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sha256&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SHA&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;SIZE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;256&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 256K 정의
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getFileHash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sha&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SHA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;rb&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 파일에서 256KB 만큼 읽어온다.
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;sha&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#읽은 256KB 정보만큼 해시할 데이터 갱신
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 파일에서 그 다음 256KB 읽음
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;hashval&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sha&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;digest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 최종 해시값 계산
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hashval&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hashCheck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;hashval1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getFileHash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;hashval2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getFileHash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hashval1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hashval2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Two Files are Same&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Two Files are diffrent&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;file1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;./plain.txt&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;file2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;./plain2.txt&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;hashCheck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위 코드는 어떤 크기의 파일이라도 두 개의 파일에 대한 무결성 체크를 수행하는 완전한 코드이다.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>테스트용 새로운 포스트 test</title>
    <link href="https://0o3q.github.io/2023/04/10/new-post"/>
    <updated>2023-04-10T00:00:00+09:00</updated>
    <id>https://0o3q.github.io/2023/04/10/new_post</id>
    <content type="html">&lt;h4 id=&quot;블로그-첫-제작-기념-테스트-블로그-test&quot;&gt;블로그 첫 제작 기념 테스트 블로그 test&lt;/h4&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;블로그
+test
+&lt;img src=&quot;https://0o3q.github.io/images/2023-04-10-new_post/test.svg&quot; alt=&quot;Image test&quot; width=&quot;50&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;블로그-첫-제작-기념-테스트-블로그-test-1&quot;&gt;블로그 첫 제작 기념 테스트 블로그 test&lt;/h4&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;블로그
+test
+&lt;img src=&quot;https://0o3q.github.io/images/2023-04-10-new_post/test.svg&quot; alt=&quot;Image test&quot; width=&quot;50&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;블로그-첫-제작-기념-테스트-블로그-test-2&quot;&gt;블로그 첫 제작 기념 테스트 블로그 test&lt;/h4&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;블로그
+test
+&lt;img src=&quot;https://0o3q.github.io/images/2023-04-10-new_post/test.svg&quot; alt=&quot;Image test&quot; width=&quot;50&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;블로그-첫-제작-기념-테스트-블로그-test-3&quot;&gt;블로그 첫 제작 기념 테스트 블로그 test&lt;/h4&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;블로그
+test
+&lt;img src=&quot;https://0o3q.github.io/images/2023-04-10-new_post/test.svg&quot; alt=&quot;Image test&quot; width=&quot;50&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;블로그-첫-제작-기념-테스트-블로그-test-4&quot;&gt;블로그 첫 제작 기념 테스트 블로그 test&lt;/h4&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;블로그
+test
+&lt;img src=&quot;https://0o3q.github.io/images/2023-04-10-new_post/test.svg&quot; alt=&quot;Image test&quot; width=&quot;50&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;블로그-첫-제작-기념-테스트-블로그-test-5&quot;&gt;블로그 첫 제작 기념 테스트 블로그 test&lt;/h4&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;블로그
+test
+&lt;img src=&quot;https://0o3q.github.io/images/2023-04-10-new_post/test.svg&quot; alt=&quot;Image test&quot; width=&quot;50&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;블로그-첫-제작-기념-테스트-블로그-test-6&quot;&gt;블로그 첫 제작 기념 테스트 블로그 test&lt;/h4&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;블로그
+test
+&lt;img src=&quot;https://0o3q.github.io/images/2023-04-10-new_post/test.svg&quot; alt=&quot;Image test&quot; width=&quot;50&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;블로그-첫-제작-기념-테스트-블로그-test-7&quot;&gt;블로그 첫 제작 기념 테스트 블로그 test&lt;/h4&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;블로그
