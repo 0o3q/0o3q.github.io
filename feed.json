@@ -62,30 +62,6 @@
                 }
                 
             
-        },
-    
-        {
-            "id": "https://0o3q.github.io/2023/04/10/new-post",
-            "title": "테스트용 새로운 포스트 test",
-            "summary": null,
-            "content_text": "블로그 첫 제작 기념 테스트 블로그 test블로그testprint(\"Hello World\")블로그 첫 제작 기념 테스트 블로그 test블로그testprint(\"Hello World\")블로그 첫 제작 기념 테스트 블로그 test블로그testprint(\"Hello World\")블로그 첫 제작 기념 테스트 블로그 test블로그testprint(\"Hello World\")블로그 첫 제작 기념 테스트 블로그 test블로그testprint(\"Hello World\")블로그 첫 제작 기념 테스트 블로그 test블로그testprint(\"Hello World\")블로그 첫 제작 기념 테스트 블로그 test블로그testprint(\"Hello World\")블로그 첫 제작 기념 테스트 블로그 test블로그testprint(\"Hello World\")",
-            "content_html": "<h4 id=\"블로그-첫-제작-기념-테스트-블로그-test\">블로그 첫 제작 기념 테스트 블로그 test</h4><hr /><p>블로그test<img src=\"https://0o3q.github.io/images/2023-04-10-new_post/test.svg\" alt=\"Image test\" width=\"50\" height=\"50\" /></p><div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">print</span><span class=\"p\">(</span><span class=\"s\">\"Hello World\"</span><span class=\"p\">)</span></code></pre></div></div><hr /><h4 id=\"블로그-첫-제작-기념-테스트-블로그-test-1\">블로그 첫 제작 기념 테스트 블로그 test</h4><hr /><p>블로그test<img src=\"https://0o3q.github.io/images/2023-04-10-new_post/test.svg\" alt=\"Image test\" width=\"50\" height=\"50\" /></p><div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">print</span><span class=\"p\">(</span><span class=\"s\">\"Hello World\"</span><span class=\"p\">)</span></code></pre></div></div><h4 id=\"블로그-첫-제작-기념-테스트-블로그-test-2\">블로그 첫 제작 기념 테스트 블로그 test</h4><hr /><p>블로그test<img src=\"https://0o3q.github.io/images/2023-04-10-new_post/test.svg\" alt=\"Image test\" width=\"50\" height=\"50\" /></p><div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">print</span><span class=\"p\">(</span><span class=\"s\">\"Hello World\"</span><span class=\"p\">)</span></code></pre></div></div><h4 id=\"블로그-첫-제작-기념-테스트-블로그-test-3\">블로그 첫 제작 기념 테스트 블로그 test</h4><hr /><p>블로그test<img src=\"https://0o3q.github.io/images/2023-04-10-new_post/test.svg\" alt=\"Image test\" width=\"50\" height=\"50\" /></p><div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">print</span><span class=\"p\">(</span><span class=\"s\">\"Hello World\"</span><span class=\"p\">)</span></code></pre></div></div><h4 id=\"블로그-첫-제작-기념-테스트-블로그-test-4\">블로그 첫 제작 기념 테스트 블로그 test</h4><hr /><p>블로그test<img src=\"https://0o3q.github.io/images/2023-04-10-new_post/test.svg\" alt=\"Image test\" width=\"50\" height=\"50\" /></p><div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">print</span><span class=\"p\">(</span><span class=\"s\">\"Hello World\"</span><span class=\"p\">)</span></code></pre></div></div><h4 id=\"블로그-첫-제작-기념-테스트-블로그-test-5\">블로그 첫 제작 기념 테스트 블로그 test</h4><hr /><p>블로그test<img src=\"https://0o3q.github.io/images/2023-04-10-new_post/test.svg\" alt=\"Image test\" width=\"50\" height=\"50\" /></p><div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">print</span><span class=\"p\">(</span><span class=\"s\">\"Hello World\"</span><span class=\"p\">)</span></code></pre></div></div><h4 id=\"블로그-첫-제작-기념-테스트-블로그-test-6\">블로그 첫 제작 기념 테스트 블로그 test</h4><hr /><p>블로그test<img src=\"https://0o3q.github.io/images/2023-04-10-new_post/test.svg\" alt=\"Image test\" width=\"50\" height=\"50\" /></p><div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">print</span><span class=\"p\">(</span><span class=\"s\">\"Hello World\"</span><span class=\"p\">)</span></code></pre></div></div><h4 id=\"블로그-첫-제작-기념-테스트-블로그-test-7\">블로그 첫 제작 기념 테스트 블로그 test</h4><hr /><p>블로그test<img src=\"https://0o3q.github.io/images/2023-04-10-new_post/test.svg\" alt=\"Image test\" width=\"50\" height=\"50\" /></p><div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">print</span><span class=\"p\">(</span><span class=\"s\">\"Hello World\"</span><span class=\"p\">)</span></code></pre></div></div>",
-            "url": "https://0o3q.github.io/2023/04/10/new-post",
-            
-            
-            
-            
-            
-            "date_published": "2023-04-10T00:00:00+09:00",
-            "date_modified": "2023-04-10T00:00:00+09:00",
-            
-                "author":  {
-                "name": "0o3q",
-                "url": null,
-                "avatar": null
-                }
-                
-            
         }
     
     ]

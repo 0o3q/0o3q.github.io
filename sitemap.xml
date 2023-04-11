@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://0o3q.github.io/2023/04/10/new-post</loc>
-<lastmod>2023-04-10T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>https://0o3q.github.io/2023/04/12/blockchain-with-bitcoin</loc>
 <lastmod>2023-04-12T00:00:00+09:00</lastmod>
 </url>
@@ -16,20 +12,23 @@
 <loc>https://0o3q.github.io/about/</loc>
 </url>
 <url>
-<loc>https://0o3q.github.io/tag/test/</loc>
+<loc>https://0o3q.github.io/</loc>
 </url>
 <url>
 <loc>https://0o3q.github.io/tag/%ED%95%B4%EC%8B%9C/</loc>
 </url>
 <url>
-<loc>https://0o3q.github.io/</loc>
+<loc>https://0o3q.github.io/tag/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8/</loc>
+</url>
+<url>
+<loc>https://0o3q.github.io/tag/%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8/</loc>
 </url>
 <url>
 <loc>https://0o3q.github.io/google95b6d25305d95821.html</loc>
-<lastmod>2023-04-12T06:08:44+09:00</lastmod>
+<lastmod>2023-04-12T06:13:23+09:00</lastmod>
 </url>
 <url>
 <loc>https://0o3q.github.io/naverdf07570943f5a6e7b270c87578174db7.html</loc>
-<lastmod>2023-04-12T06:08:44+09:00</lastmod>
+<lastmod>2023-04-12T06:13:23+09:00</lastmod>
 </url>
 </urlset>
