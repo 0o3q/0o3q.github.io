@@ -4,7 +4,7 @@
  <title>0o3q</title>
  <link href="https://0o3q.github.io/atom.xml" rel="self"/>
  <link href="https://0o3q.github.io/"/>
- <updated>2023-04-12T06:40:14+09:00</updated>
+ <updated>2023-04-12T06:43:39+09:00</updated>
  <id>https://0o3q.github.io</id>
  <author>
    <name>0o3q</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>블록체인과 비트코인</title>
-   <link href="https://0o3q.github.io/2023/04/13/blockchain-and-bitcoin"/>
+   <link href="https://0o3q.github.io/2023/04/13/blockchainandbitcoin"/>
    <updated>2023-04-13T00:00:00+09:00</updated>
-   <id>https://0o3q.github.io/2023/04/13/blockchain-and-bitcoin</id>
+   <id>https://0o3q.github.io/2023/04/13/blockchainAndBitcoin</id>
    <content type="html">&lt;h2 id=&quot;블록체인의-개념과-구조&quot;&gt;블록체인의 개념과 구조&lt;/h2&gt;
 
 &lt;p&gt;블록체인은 단어 그대로 해석해보면 블록이 서로 연결되어 있다라는 의미이다. 
