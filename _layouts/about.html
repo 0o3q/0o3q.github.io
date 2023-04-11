@@ -13,6 +13,11 @@ layout: default
 
   <h1 class="title">About</h1>
   <span class="meta">
-  {{ content | toc}}
+  <article class="post-article">
+    <div class="toc">
+      {% include toc.html html=content %}
+    </div>
+  </article>
+  {{ content }}
 
 <nav class="post-nav"></nav>
