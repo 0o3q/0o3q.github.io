@@ -42,13 +42,3 @@ layout: default
   </nav>
 
 </section>
-
-<script>
-$(document).ready(function(){
-  var currentPosition = parseInt($(".post-article").css("top"));
-  $(window).scroll(function() {
-    var position = $(window).scrollTop(); 
-    $(".post-article").stop().animate({"top":position+currentPosition+"px"},1000);
-  });
-});
-</script>
