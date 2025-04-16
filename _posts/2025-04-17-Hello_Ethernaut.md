@@ -18,7 +18,7 @@ Look into the level's info method `contract.info()`  or `await contract.info()`
 
 ![Image await contract.theMethodName()]({{site.url}}/images/2025-04-17-Hello_Ethernaut/await_contract_theMethodName().png)
 
-![Image await contract.method7123949()]({{site.url}}/images/2025-04-17-Hello_Ethernaut/method7123949().png)
+![Image await contract.method7123949()]({{site.url}}/images/2025-04-17-Hello_Ethernaut/await_contract_method7123949().png)
 
 ![Image await contract.authenticate()]({{site.url}}/images/2025-04-17-Hello_Ethernaut/await_contract_authenticate().png)
 
