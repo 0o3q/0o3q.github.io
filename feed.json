@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://0o3q.github.io/2025/04/17/hello-ethernaut",
+            "title": "Hello Ethernaut",
+            "summary": null,
+            "content_text": "Look into the level’s info method contract.info()  or await contract.info()  if you’re using Chrome v62. You should have all you need to complete the level within the contract. When you know you have completed the level, submit the contract using the submit button at the bottom of the page. This sends your instance back to the ethernaut, which will determine if you have completed it.after transaction called, clik the “Submit Instance” button",
+            "content_html": "<p>Look into the level’s info method <code class=\"language-plaintext highlighter-rouge\">contract.info()</code>  or <code class=\"language-plaintext highlighter-rouge\">await contract.info()</code>  if you’re using Chrome v62. You should have all you need to complete the level within the contract. When you know you have completed the level, submit the contract using the submit button at the bottom of the page. This sends your instance back to the ethernaut, which will determine if you have completed it.</p><p><img src=\"https://0o3q.github.io/images/2025-04-17_Hello_Ethernaut/await_contract_info().png\" alt=\"Image await contract.info()\" /></p><p><img src=\"https://0o3q.github.io/images/2025-04-17_Hello_Ethernaut/await_contract_info1().png\" alt=\"Image await contract.info1()\" /></p><p><img src=\"https://0o3q.github.io/images/2025-04-17_Hello_Ethernaut/await_contract_info2().png\" alt=\"Image await contract.info2()\" /></p><p><img src=\"https://0o3q.github.io/images/2025-04-17_Hello_Ethernaut/await_contract_infoNum().png\" alt=\"Image await contract.infoNum()\" /></p><p><img src=\"https://0o3q.github.io/images/2025-04-17_Hello_Ethernaut/await_contract_info42().png\" alt=\"Image await contract.info42()\" /></p><p><img src=\"https://0o3q.github.io/images/2025-04-17_Hello_Ethernaut/await_contract_theMethodName().png\" alt=\"Image await contract.theMethodName()\" /></p><p><img src=\"https://0o3q.github.io/images/2025-04-17_Hello_Ethernaut/method7123949().png\" alt=\"Image await contract.method7123949()\" /></p><p><img src=\"https://0o3q.github.io/images/2025-04-17_Hello_Ethernaut/await_contract_authenticate().png\" alt=\"Image await contract.authenticate()\" /></p><p><img src=\"https://0o3q.github.io/images/2025-04-17_Hello_Ethernaut/mm.png\" alt=\"Image Metamask\" /></p><p>after transaction called, clik the “Submit Instance” button</p><p><img src=\"https://0o3q.github.io/images/2025-04-17_Hello_Ethernaut/complete.png\" alt=\"Image complete\" /></p>",
+            "url": "https://0o3q.github.io/2025/04/17/hello-ethernaut",
+            
+            
+            
+            "tags": ["blockchain","ethernaut"],
+            
+            "date_published": "2025-04-17T00:00:00+09:00",
+            "date_modified": "2025-04-17T00:00:00+09:00",
+            
+                "author":  {
+                "name": "0o3q",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://0o3q.github.io/2023/04/13/blockchain-and-bitcoin",
             "title": "블록체인과 비트코인",
             "summary": null,

@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Hello Ethernaut",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut",
+      "url"      : "/2025/04/17/hello-ethernaut",
+      "date"     : "2025-04-17 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "블록체인과 비트코인",
       "description" : "",
       "category" : "",
