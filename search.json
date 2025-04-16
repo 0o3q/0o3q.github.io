@@ -10,21 +10,12 @@
     } ,
   
     {
-      "title"    : "블록체인과 비트코인",
+      "title"    : "Fallback",
       "description" : "",
       "category" : "",
-      "tags"     : "해시, 블록체인, 비트코인",
-      "url"      : "/2023/04/13/blockchain-and-bitcoin",
-      "date"     : "2023-04-13 00:00:00 +0900"
-    } ,
-  
-    {
-      "title"    : "해시",
-      "description" : "",
-      "category" : "",
-      "tags"     : "해시",
-      "url"      : "/2023/04/12/hash",
-      "date"     : "2023-04-12 00:00:00 +0900"
+      "tags"     : "blockchain, ethernaut, foundry",
+      "url"      : "/2025/04/17/fallback",
+      "date"     : "2025-04-17 00:00:00 +0900"
     } 
   
 ]
