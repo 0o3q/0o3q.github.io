@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Coin Flip",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry",
+      "url"      : "/2025/04/18/coin-flip",
+      "date"     : "2025-04-18 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "Fallout",
       "description" : "",
       "category" : "",
