@@ -4,7 +4,7 @@
  <title>0o3q</title>
  <link href="https://0o3q.github.io/atom.xml" rel="self"/>
  <link href="https://0o3q.github.io/"/>
- <updated>2025-04-17T20:48:14+09:00</updated>
+ <updated>2025-04-17T23:06:45+09:00</updated>
  <id>https://0o3q.github.io</id>
  <author>
    <name>0o3q</name>
@@ -399,7 +399,7 @@ ONCHAIN EXECUTION COMPLETE &amp;amp; SUCCESSFUL.
 
 &lt;p&gt;The Delegation contract’s state can be changed by caliing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pwn()&lt;/code&gt; function in Delegate contract via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;delegatecall()&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;msg.sender&lt;/code&gt; in the Delegate contract will be EOA because the call is made by using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;delegationcall()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;msg.sender&lt;/code&gt; in the Delegate contract will be EOA because the call is made by using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;delegatecall()&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;exploit&quot;&gt;Exploit&lt;/h1&gt;
 
@@ -748,7 +748,7 @@ ONCHAIN EXECUTION COMPLETE &amp;amp; SUCCESSFUL.
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Using to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blackhash&lt;/code&gt;value to generate random numbers.&lt;/p&gt;
+&lt;p&gt;Using to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blackhash&lt;/code&gt; value to generate random numbers.&lt;/p&gt;
 
 &lt;p&gt;Since this is accessible not only to the contract but also to external users, it becomes predictable.&lt;/p&gt;
 
