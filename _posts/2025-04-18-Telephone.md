@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Ethernaut] Telephone"
-tags: blockchain ethernaut foundry
+tags: blockchain ethernaut foundry tx.origin
 ---
 
 # Analysis

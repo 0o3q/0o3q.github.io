@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Ethernaut] Delegation"
-tags: blockchain ethernaut foundry
+tags: blockchain ethernaut foundry delegatecall
 ---
 
 # Analysis
@@ -49,7 +49,7 @@ The `fallback()` function in the Delegation contract performs `delegatecall()` t
 
 The Delegation contract's state can be changed by caliing the `pwn()` function in Delegate contract via `delegatecall()`.
 
-`msg.sender` in the Delegate contract will be EOA because the call is made by using `delegationcall()`.
+`msg.sender` in the Delegate contract will be EOA because the call is made by using `delegatecall()`.
 
 # Exploit
 
