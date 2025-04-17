@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Telephone"
+title: "[Ethernaut] Telephone"
 tags: blockchain ethernaut foundry
 ---
 

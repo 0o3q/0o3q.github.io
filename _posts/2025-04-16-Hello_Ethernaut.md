@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hello Ethernaut"
+title: "[Ethernaut] Hello Ethernaut"
 tags: blockchain ethernaut
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Delegation"
+title: "[Ethernaut] Delegation"
 tags: blockchain ethernaut foundry
 ---
 
