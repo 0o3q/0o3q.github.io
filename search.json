@@ -1,7 +1,7 @@
 [
   
     {
-      "title"    : "Vault",
+      "title"    : "[Ethernaut] Vault",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -10,7 +10,7 @@
     } ,
   
     {
-      "title"    : "Force",
+      "title"    : "[Ethernaut] Force",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -19,7 +19,7 @@
     } ,
   
     {
-      "title"    : "Delegation",
+      "title"    : "[Ethernaut] Delegation",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -28,7 +28,7 @@
     } ,
   
     {
-      "title"    : "Token",
+      "title"    : "[Ethernaut] Token",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -37,7 +37,7 @@
     } ,
   
     {
-      "title"    : "Telephone",
+      "title"    : "[Ethernaut] Telephone",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -46,7 +46,7 @@
     } ,
   
     {
-      "title"    : "Coin Flip",
+      "title"    : "[Ethernaut] Coin Flip",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -55,7 +55,7 @@
     } ,
   
     {
-      "title"    : "Fallout",
+      "title"    : "[Ethernaut] Fallout",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -64,7 +64,7 @@
     } ,
   
     {
-      "title"    : "Fallback",
+      "title"    : "[Ethernaut] Fallback",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -73,7 +73,7 @@
     } ,
   
     {
-      "title"    : "Hello Ethernaut",
+      "title"    : "[Ethernaut] Hello Ethernaut",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut",
