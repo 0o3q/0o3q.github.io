@@ -4,7 +4,7 @@
  <title>0o3q</title>
  <link href="https://0o3q.github.io/atom.xml" rel="self"/>
  <link href="https://0o3q.github.io/"/>
- <updated>2025-04-17T20:02:48+09:00</updated>
+ <updated>2025-04-17T20:48:14+09:00</updated>
  <id>https://0o3q.github.io</id>
  <author>
    <name>0o3q</name>
@@ -269,12 +269,9 @@ ONCHAIN EXECUTION COMPLETE &amp;amp; SUCCESSFUL.
 
 &lt;p&gt;&lt;a href=&quot;https://docs.soliditylang.org/en/latest/security-considerations.html#sending-and-receiving-ether&quot;&gt;Solidity 0.8.30 Documentation - sending and receiving ether&lt;/a&gt;&lt;/p&gt;
 
-&lt;aside&gt;
-💡
-
-Neither contracts nor “external accounts” are currently able to prevent someone from sending them Ether. Contracts can react on and reject a regular transfer, but there are ways to move Ether without creating a message call. One way is to simply “mine to” the contract address and the second way is using `selfdestruct(x)`.
-
-&lt;/aside&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;💡 Neither contracts nor “external accounts” are currently able to prevent someone from sending them Ether. Contracts can react on and reject a regular transfer, but there are ways to move Ether without creating a message call. One way is to simply “mine to” the contract address and the second way is using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;selfdestruct(x)&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#deactivate-and-self-destruct&quot;&gt;Solidity 0.8.30 Documentation - deactivate and self destruct&lt;/a&gt;&lt;/p&gt;
 
@@ -889,12 +886,9 @@ ONCHAIN EXECUTION COMPLETE &amp;amp; SUCCESSFUL.
 
 &lt;p&gt;&lt;a href=&quot;https://docs.soliditylang.org/en/v0.6.0/contracts.html#constructors&quot;&gt;Solidity 0.6.0 Documentation - constructors&lt;/a&gt;&lt;/p&gt;
 
-&lt;aside&gt;
-💡
-
-Prior to version 0.4.22, constructors were defined as functions with the same name as the contract. This syntax was deprecated and is not allowed anymore in version 0.5.0.
-
-&lt;/aside&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;💡 Prior to version 0.4.22, constructors were defined as functions with the same name as the contract. This syntax was deprecated and is not allowed anymore in version 0.5.0.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;For some reason, the intended &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;constructor&lt;/code&gt; code was written as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Fal1out()&lt;/code&gt;, preventing it from acting as a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;constructor&lt;/code&gt; and allowing external access, which enables claiming &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;owner&lt;/code&gt;.&lt;/p&gt;
 
