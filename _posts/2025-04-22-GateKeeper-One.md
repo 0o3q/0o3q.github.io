@@ -43,23 +43,13 @@ contract GatekeeperOne {
 }
 ```
 
-https://docs.soliditylang.org/en/latest/units-and-global-variables.html
+[Solidity 0.8.30 Documentation - units and global variables](https://docs.soliditylang.org/en/latest/units-and-global-variables.html)
 
-<aside>
-💡
+> 💡 `gasleft() returns (uint256)`: remaining gas
 
-`gasleft() returns (uint256)`: remaining gas
+[Solidity 0.8.30 Documentation - external function calls](https://docs.soliditylang.org/en/latest/control-structures.html#external-function-calls)
 
-</aside>
-
-https://docs.soliditylang.org/en/latest/control-structures.html#external-function-calls
-
-<aside>
-💡
-
-When calling functions of other contracts, you can specify the amount of Wei or gas sent with the call with the special options `{value: 10, gas: 10000}`. Note that it is discouraged to specify gas values explicitly, since the gas costs of opcodes can change in the future.
-
-</aside>
+> 💡 When calling functions of other contracts, you can specify the amount of Wei or gas sent with the call with the special options `{value: 10, gas: 10000}`. Note that it is discouraged to specify gas values explicitly, since the gas costs of opcodes can change in the future.
 
 # Exploit
 
