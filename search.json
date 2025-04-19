@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "[Ethernaut] GateKeeper One",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry",
+      "url"      : "/2025/04/22/gatekeeper-one",
+      "date"     : "2025-04-22 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "[Ethernaut] Privacy",
       "description" : "",
       "category" : "",
