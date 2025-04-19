@@ -4,7 +4,7 @@
  <title>0o3q</title>
  <link href="https://0o3q.github.io/atom.xml" rel="self"/>
  <link href="https://0o3q.github.io/"/>
- <updated>2025-04-20T05:41:10+09:00</updated>
+ <updated>2025-04-20T05:43:16+09:00</updated>
  <id>https://0o3q.github.io</id>
  <author>
    <name>0o3q</name>
@@ -13,10 +13,10 @@
 
  
  <entry>
-   <title></title>
-   <link href="https://0o3q.github.io/2025/04/20/2025-04-21-elevator"/>
-   <updated>2025-04-20T05:41:10+09:00</updated>
-   <id>https://0o3q.github.io/2025/04/20/2025-04-21-Elevator</id>
+   <title>[Ethernaut] Elevator</title>
+   <link href="https://0o3q.github.io/2025/04/21/elevator"/>
+   <updated>2025-04-21T00:00:00+09:00</updated>
+   <id>https://0o3q.github.io/2025/04/21/Elevator</id>
    <content type="html">&lt;h1 id=&quot;analysis&quot;&gt;Analysis&lt;/h1&gt;
 
 &lt;hr /&gt;
