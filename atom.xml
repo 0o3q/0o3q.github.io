@@ -4,7 +4,7 @@
  <title>0o3q</title>
  <link href="https://0o3q.github.io/atom.xml" rel="self"/>
  <link href="https://0o3q.github.io/"/>
- <updated>2025-04-20T05:52:27+09:00</updated>
+ <updated>2025-04-20T05:55:49+09:00</updated>
  <id>https://0o3q.github.io</id>
  <author>
    <name>0o3q</name>
@@ -57,23 +57,17 @@
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;https://docs.soliditylang.org/en/latest/units-and-global-variables.html&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.soliditylang.org/en/latest/units-and-global-variables.html&quot;&gt;Solidity 0.8.30 Documentation - units and global variables&lt;/a&gt;&lt;/p&gt;
 
-&lt;aside&gt;
-💡
+&lt;blockquote&gt;
+  &lt;p&gt;💡 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gasleft() returns (uint256)&lt;/code&gt;: remaining gas&lt;/p&gt;
+&lt;/blockquote&gt;
 
-`gasleft() returns (uint256)`: remaining gas
+&lt;p&gt;&lt;a href=&quot;https://docs.soliditylang.org/en/latest/control-structures.html#external-function-calls&quot;&gt;Solidity 0.8.30 Documentation - external function calls&lt;/a&gt;&lt;/p&gt;
 
-&lt;/aside&gt;
-
-&lt;p&gt;https://docs.soliditylang.org/en/latest/control-structures.html#external-function-calls&lt;/p&gt;
-
-&lt;aside&gt;
-💡
-
-When calling functions of other contracts, you can specify the amount of Wei or gas sent with the call with the special options `{value: 10, gas: 10000}`. Note that it is discouraged to specify gas values explicitly, since the gas costs of opcodes can change in the future.
-
-&lt;/aside&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;💡 When calling functions of other contracts, you can specify the amount of Wei or gas sent with the call with the special options &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{value: 10, gas: 10000}&lt;/code&gt;. Note that it is discouraged to specify gas values explicitly, since the gas costs of opcodes can change in the future.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h1 id=&quot;exploit&quot;&gt;Exploit&lt;/h1&gt;
 
