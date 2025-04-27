@@ -374,8 +374,8 @@ contract Exploit is Script {
 
 ```
 
-코드를 작성하던 도중 `swap` 함수에서 `uniswapV2Call` 함수가 구체적으로 정의가 되어 불러와진게 아닌 `interface`  를 통해 호출되어 있었다.
-`uniswapV2Call` 함수를 `override`해서 FLAG의 값을 불러오게 할 수 있다는 것을 알았고 `receive`로 풀이하는 것보다 `override` 를 통해  FLAG 값을 가져오도록 한 뒤 `swap` 함수는 오류가 발생하지만 상관 없이 try catch로 날려 주었다.
+코드를 작성하던 도중 `swap` 함수에서 `uniswapV2Call` 함수가 구체적으로 정의가 되어있는것이 아닌 `interface`를 통해 호출되어 있었고 `override`해서 FLAG의 값을 불러올 수 있었다.
+`receive`로 풀이하는 것보다 `override` 를 통해  FLAG 값을 가져오도록 한 뒤 `swap` 함수는 오류가 발생하지만 상관 없이 try catch로 날려 주었다.
 
 ```bash
 $ forge script script/Exploit.sol:Exploit --broadcast --rpc-url http://127.0.0.1:12455 --private-key 0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d
