@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2025 핵테온 세종(HackTheon Sejong) 국제 대학생 사이버보안 경진대회 contract"
+title: "2025 핵테온 contract"
 tags: blockchain HackTheon foundry contract flashloan
 ---
 
@@ -106,7 +106,7 @@ contract WETH is ERC20, Ownable {
 
 `src/WETH.sol` 코드는 다음과 같으며 해당 파일에서 flag 함수로 FLAG를 얻을 수 있을 것으로 보인다.
 
-### `mint` 함수
+### mint 함수
 
 ---
 
@@ -242,7 +242,7 @@ contract Swap is ReentrancyGuard {
 
 여기서 Checks-Effectes Interaction 패턴이 적용되지 않아 `_to`의 토큰을 먼저 보낸 뒤, `_from` 의 토큰을 받아오고 있어 `_from`의 토큰이 충분하지 않아도 값을 보낼 수 있어 보인다.
 
-### `transferFrom` 함수
+### transferFrom 함수
 
 ---
 
@@ -313,7 +313,7 @@ function _update(address from, address to, uint256 value) internal virtual {
 
 이후 IUniswapV2Callee contract의  `uniswapV2Call` 함수를 실행하고 있다.
 
-### `uniswapV2Call` 함수
+### uniswapV2Call 함수
 
 ---
 
