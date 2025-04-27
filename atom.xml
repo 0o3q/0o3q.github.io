@@ -4,7 +4,7 @@
  <title>0o3q</title>
  <link href="https://0o3q.github.io/atom.xml" rel="self"/>
  <link href="https://0o3q.github.io/"/>
- <updated>2025-04-28T06:05:25+09:00</updated>
+ <updated>2025-04-28T06:07:19+09:00</updated>
  <id>https://0o3q.github.io</id>
  <author>
    <name>0o3q</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>2025 핵테온 세종(HackTheon Sejong) 국제 대학생 사이버보안 경진대회 contract</title>
+   <title>2025 핵테온 contract</title>
    <link href="https://0o3q.github.io/2025/04/27/hacktheon-contact"/>
    <updated>2025-04-27T00:00:00+09:00</updated>
    <id>https://0o3q.github.io/2025/04/27/HackTheon_contact</id>
@@ -117,7 +117,7 @@
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src/WETH.sol&lt;/code&gt; 코드는 다음과 같으며 해당 파일에서 flag 함수로 FLAG를 얻을 수 있을 것으로 보인다.&lt;/p&gt;
 
-&lt;h3 id=&quot;mint-함수&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mint&lt;/code&gt; 함수&lt;/h3&gt;
+&lt;h3 id=&quot;mint-함수&quot;&gt;mint 함수&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -249,7 +249,7 @@
 
 &lt;p&gt;여기서 Checks-Effectes Interaction 패턴이 적용되지 않아 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_to&lt;/code&gt;의 토큰을 먼저 보낸 뒤, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_from&lt;/code&gt; 의 토큰을 받아오고 있어 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_from&lt;/code&gt;의 토큰이 충분하지 않아도 값을 보낼 수 있어 보인다.&lt;/p&gt;
 
-&lt;h3 id=&quot;transferfrom-함수&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transferFrom&lt;/code&gt; 함수&lt;/h3&gt;
+&lt;h3 id=&quot;transferfrom-함수&quot;&gt;transferFrom 함수&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -317,7 +317,7 @@
 
 &lt;p&gt;이후 IUniswapV2Callee contract의  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uniswapV2Call&lt;/code&gt; 함수를 실행하고 있다.&lt;/p&gt;
 
-&lt;h3 id=&quot;uniswapv2call-함수&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uniswapV2Call&lt;/code&gt; 함수&lt;/h3&gt;
+&lt;h3 id=&quot;uniswapv2call-함수&quot;&gt;uniswapV2Call 함수&lt;/h3&gt;
 
 &lt;hr /&gt;
 
