@@ -4,7 +4,7 @@
  <title>0o3q</title>
  <link href="https://0o3q.github.io/atom.xml" rel="self"/>
  <link href="https://0o3q.github.io/"/>
- <updated>2025-04-28T06:07:19+09:00</updated>
+ <updated>2025-04-28T06:10:49+09:00</updated>
  <id>https://0o3q.github.io</id>
  <author>
    <name>0o3q</name>
@@ -384,8 +384,8 @@
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;코드를 작성하던 도중 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;swap&lt;/code&gt; 함수에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uniswapV2Call&lt;/code&gt; 함수가 구체적으로 정의가 되어 불러와진게 아닌 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;interface&lt;/code&gt;  를 통해 호출되어 있었다.
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uniswapV2Call&lt;/code&gt; 함수를 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;override&lt;/code&gt;해서 FLAG의 값을 불러오게 할 수 있다는 것을 알았고 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;receive&lt;/code&gt;로 풀이하는 것보다 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;override&lt;/code&gt; 를 통해  FLAG 값을 가져오도록 한 뒤 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;swap&lt;/code&gt; 함수는 오류가 발생하지만 상관 없이 try catch로 날려 주었다.&lt;/p&gt;
+&lt;p&gt;코드를 작성하던 도중 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;swap&lt;/code&gt; 함수에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uniswapV2Call&lt;/code&gt; 함수가 구체적으로 정의가 되어있는것이 아닌 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;interface&lt;/code&gt;를 통해 호출되어 있었고 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;override&lt;/code&gt;해서 FLAG의 값을 불러올 수 있었다.
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;receive&lt;/code&gt;로 풀이하는 것보다 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;override&lt;/code&gt; 를 통해  FLAG 값을 가져오도록 한 뒤 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;swap&lt;/code&gt; 함수는 오류가 발생하지만 상관 없이 try catch로 날려 주었다.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;forge script script/Exploit.sol:Exploit &lt;span class=&quot;nt&quot;&gt;--broadcast&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--rpc-url&lt;/span&gt; http://127.0.0.1:12455 &lt;span class=&quot;nt&quot;&gt;--private-key&lt;/span&gt; 0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d
 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;⠊] Compiling...
