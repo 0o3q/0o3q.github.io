@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "[Ethernaut] Preservation",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry, delegatecall, storage",
+      "url"      : "/2025/05/15/preservation",
+      "date"     : "2025-05-15 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "[Ethernaut] Naught Coin",
       "description" : "",
       "category" : "",
