@@ -1,6 +1,24 @@
 [
   
     {
+      "title"    : "[Ethernaut] MagicNumber",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry, assembly, bytecode",
+      "url"      : "/2025/05/18/magicnumber",
+      "date"     : "2025-05-18 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "[Ethernaut] Recovery",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry, Explorer",
+      "url"      : "/2025/05/17/recovery",
+      "date"     : "2025-05-17 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "[Ethernaut] Preservation",
       "description" : "",
       "category" : "",
