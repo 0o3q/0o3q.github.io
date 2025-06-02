@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "[Ethernaut] Alien Codex",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry, bytes, dynamicArray, underflow, slot",
+      "url"      : "/2025/06/02/aliencodex",
+      "date"     : "2025-06-02 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "[Ethernaut] MagicNumber",
       "description" : "",
       "category" : "",
