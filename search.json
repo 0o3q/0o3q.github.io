@@ -1,7 +1,7 @@
 [
   
     {
-      "title"    : "[Ethernaut] Alien Codex",
+      "title"    : "[Ethernaut] 19.Alien Codex",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry, bytes, dynamicArray, underflow, slot",
@@ -10,7 +10,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] MagicNumber",
+      "title"    : "[Ethernaut] 18.MagicNumber",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry, assembly, bytecode",
@@ -19,7 +19,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Recovery",
+      "title"    : "[Ethernaut] 17.Recovery",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry, Explorer",
@@ -28,7 +28,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Preservation",
+      "title"    : "[Ethernaut] 16.Preservation",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry, delegatecall, storage",
@@ -37,7 +37,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Naught Coin",
+      "title"    : "[Ethernaut] 15.Naught Coin",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry, ERC20",
@@ -46,7 +46,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] GateKeeper Two",
+      "title"    : "[Ethernaut] 14.GateKeeper Two",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry, assembly, extcodesize, XOR",
@@ -55,7 +55,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] GateKeeper One",
+      "title"    : "[Ethernaut] 13.GateKeeper One",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -64,7 +64,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Privacy",
+      "title"    : "[Ethernaut] 12.Privacy",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -73,7 +73,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Elevator",
+      "title"    : "[Ethernaut] 11.Elevator",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -82,7 +82,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Re-entrancy",
+      "title"    : "[Ethernaut] 10.Re-entrancy",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry, reentrancy",
@@ -91,7 +91,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] King",
+      "title"    : "[Ethernaut] 09.King",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -100,7 +100,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Vault",
+      "title"    : "[Ethernaut] 08.Vault",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -109,7 +109,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Force",
+      "title"    : "[Ethernaut] 07.Force",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry, selfdestruct",
@@ -118,7 +118,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Delegation",
+      "title"    : "[Ethernaut] 06.Delegation",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry, delegatecall",
@@ -127,7 +127,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Token",
+      "title"    : "[Ethernaut] 05.Token",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry, overflow",
@@ -136,7 +136,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Telephone",
+      "title"    : "[Ethernaut] 04.Telephone",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry, tx.origin",
@@ -145,7 +145,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Coin Flip",
+      "title"    : "[Ethernaut] 03.Coin Flip",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -154,7 +154,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Fallout",
+      "title"    : "[Ethernaut] 02.Fallout",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -163,7 +163,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Fallback",
+      "title"    : "[Ethernaut] 01.Fallback",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut, foundry",
@@ -172,7 +172,7 @@
     } ,
   
     {
-      "title"    : "[Ethernaut] Hello Ethernaut",
+      "title"    : "[Ethernaut] 00.Hello Ethernaut",
       "description" : "",
       "category" : "",
       "tags"     : "blockchain, ethernaut",
