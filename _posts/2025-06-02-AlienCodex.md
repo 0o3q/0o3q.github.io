@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Ethernaut] Alien Codex"
+title: "[Ethernaut] 19.Alien Codex"
 tags: blockchain ethernaut foundry bytes dynamicArray underflow slot 
 ---
 

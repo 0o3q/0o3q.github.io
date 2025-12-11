@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Ethernaut] GateKeeper Two"
+title: "[Ethernaut] 14.GateKeeper Two"
 tags: blockchain ethernaut foundry assembly extcodesize XOR
 ---
 

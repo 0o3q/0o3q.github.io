@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Ethernaut] Preservation"
+title: "[Ethernaut] 16.Preservation"
 tags: blockchain ethernaut foundry delegatecall storage
 ---
 

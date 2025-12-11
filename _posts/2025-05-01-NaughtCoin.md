@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Ethernaut] Naught Coin"
+title: "[Ethernaut] 15.Naught Coin"
 tags: blockchain ethernaut foundry ERC20
 ---
 

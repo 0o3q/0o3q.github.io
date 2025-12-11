@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Ethernaut] Re-entrancy"
+title: "[Ethernaut] 10.Re-entrancy"
 tags: blockchain ethernaut foundry reentrancy
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Ethernaut] Delegation"
+title: "[Ethernaut] 06.Delegation"
 tags: blockchain ethernaut foundry delegatecall
 ---
 

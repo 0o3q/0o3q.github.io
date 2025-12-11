@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Ethernaut] MagicNumber"
+title: "[Ethernaut] 18.MagicNumber"
 tags: blockchain ethernaut foundry assembly bytecode
 ---
 
