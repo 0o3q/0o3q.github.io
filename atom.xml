@@ -4,7 +4,7 @@
  <title>0o3q</title>
  <link href="https://0o3q.github.io/atom.xml" rel="self"/>
  <link href="https://0o3q.github.io/"/>
- <updated>2025-12-18T17:17:09+09:00</updated>
+ <updated>2025-12-18T18:15:33+09:00</updated>
  <id>https://0o3q.github.io</id>
  <author>
    <name>0o3q</name>
@@ -673,6 +673,9 @@ ONCHAIN EXECUTION COMPLETE &amp;amp; SUCCESSFUL.
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transferFrom&lt;/code&gt; function can retrieve tokens up to the approved amount if approval was previously granted through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;approve&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;p&gt;After creating the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ex&lt;/code&gt; contract and granting approval, tokens can be retrieved from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ex&lt;/code&gt; contract using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transferFrom&lt;/code&gt; function without the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;timeLock&lt;/code&gt; restriction.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;forge script script/NaughtCoinSol.sol:NaughtCoinSol &lt;span class=&quot;nt&quot;&gt;--broadcast&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;⠒] Compiling...
