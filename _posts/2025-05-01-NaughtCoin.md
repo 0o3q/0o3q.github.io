@@ -93,6 +93,9 @@ contract NaughtCoinSol is Script {
     }
 }
 ```
+The `transferFrom` function can retrieve tokens up to the approved amount if approval was previously granted through the `approve` function.
+
+After creating the `Ex` contract and granting approval, tokens can be retrieved from the `Ex` contract using the `transferFrom` function without the `timeLock` restriction.
 
 ```bash
 $ forge script script/NaughtCoinSol.sol:NaughtCoinSol --broadcast
