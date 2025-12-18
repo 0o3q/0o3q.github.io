@@ -60,7 +60,10 @@
         <span class="n">vm</span><span class="p">.</span><span class="n">stopBroadcast</span><span class="p">();</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div></div><div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>forge script script/CoinFlipSol.sol <span class="nt">--tc</span> CoinFlipSol <span class="nt">--broadcast</span>
+</code></pre></div></div><p>Looking at the problem code,</p><div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="n">lastHash</span> <span class="o">==</span> <span class="n">blockValue</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nb">revert</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div><p>Since it reverts when <code class="language-plaintext highlighter-rouge">lastHash</code> and <code class="language-plaintext highlighter-rouge">blockValue</code> are the same, it’s impossible to execute repeatedly with a loop within the same contract. Therefore, I wrote it to be executed 10 times manually to solve the problem.</p><div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>forge script script/CoinFlipSol.sol <span class="nt">--tc</span> CoinFlipSol <span class="nt">--broadcast</span>
 <span class="o">[</span>⠊] Compiling...
 No files changed, compilation skipped
 Script ran successfully.
