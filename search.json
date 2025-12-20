@@ -31,7 +31,7 @@
       "title"    : "[Ethernaut] 16.Preservation",
       "description" : "",
       "category" : "",
-      "tags"     : "blockchain, ethernaut, foundry, delegatecall, storage",
+      "tags"     : "blockchain, ethernaut, foundry, delegatecall, storage_collision",
       "url"      : "/2025/05/15/preservation",
       "date"     : "2025-05-15 00:00:00 +0900"
     } ,
@@ -121,7 +121,7 @@
       "title"    : "[Ethernaut] 06.Delegation",
       "description" : "",
       "category" : "",
-      "tags"     : "blockchain, ethernaut, foundry, delegatecall, "storage, collision"",
+      "tags"     : "blockchain, ethernaut, foundry, delegatecall, storage_collision",
       "url"      : "/2025/04/19/delegation",
       "date"     : "2025-04-19 00:00:00 +0900"
     } ,
