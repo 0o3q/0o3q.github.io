@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Ethernaut] 16.Preservation"
-tags: blockchain ethernaut foundry delegatecall storage
+tags: blockchain ethernaut foundry delegatecall storage_collision
 ---
 
 # Analysis
