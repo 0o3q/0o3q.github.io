@@ -121,7 +121,7 @@
       "title"    : "[Ethernaut] 06.Delegation",
       "description" : "",
       "category" : "",
-      "tags"     : "blockchain, ethernaut, foundry, delegatecall",
+      "tags"     : "blockchain, ethernaut, foundry, delegatecall, "storage, collision"",
       "url"      : "/2025/04/19/delegation",
       "date"     : "2025-04-19 00:00:00 +0900"
     } ,
