@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "[Ethernaut] 21.Shop",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry, state, view",
+      "url"      : "/2026/01/04/shop",
+      "date"     : "2026-01-04 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "[Ethernaut] 20.Denial",
       "description" : "",
       "category" : "",
