@@ -44,7 +44,7 @@ We respond to the `whatIsTheMeaningOfLife()` function with the right 32 byte num
 The number **42** is suspected to be the magic value expected by `whatIsTheMeaningOfLife()`.
 
 ```nasm
-PUSH1 0x2a // Push 42(0x42) onto the stack => 602a
+PUSH1 0x2a // Push 42(0x2a) onto the stack => 602a
 PUSH1 0x00 // Push memory offset 0x00 => 6000
 MSTORE // MSTORE(0x00: offset, 0x2a: value) Store 42 at memory[0x00]=> 52
 PUSH1 0x20 // Push size (32 bytes) => 6020
