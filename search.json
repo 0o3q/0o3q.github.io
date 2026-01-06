@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "[Ethernaut] 23.Dex Two",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry, dex, precision_loss",
+      "url"      : "/2026/01/07/dex-two",
+      "date"     : "2026-01-07 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "[Ethernaut] 22.Dex",
       "description" : "",
       "category" : "",
