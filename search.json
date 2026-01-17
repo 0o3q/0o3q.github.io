@@ -1,6 +1,24 @@
 [
   
     {
+      "title"    : "[Ethernaut] 25.Motorbike",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry, sellfdestruct, delegatecall, EIP-6780, EIP-7702, signAndAttachDelegation, computeCreateAddress",
+      "url"      : "/2026/01/17/motorbike",
+      "date"     : "2026-01-17 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "[Ethernaut] 24.Puzzle Wallet",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry, etherscan, EIP-1967, metadata, proxy, delegatecall",
+      "url"      : "/2026/01/09/puzzle-wallet",
+      "date"     : "2026-01-09 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "[Ethernaut] 23.Dex Two",
       "description" : "",
       "category" : "",
