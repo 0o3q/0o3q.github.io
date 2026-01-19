@@ -167,7 +167,7 @@ To verify the address checksum, use the following command:
 cast --to-checksum-address <address>
 ```
 
-We identify the vulnerability in the `CryptoVault` contract.
+We should identify the vulnerability in the `CryptoVault` contract.
 
 The `sweepToken()` function is publicly callable and verifies that the requested `token` is not the `underlying` . 
 
