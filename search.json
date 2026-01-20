@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "[Ethernaut] 27.Good Samaritan",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry, selector",
+      "url"      : "/2026/01/20/good-samaritan",
+      "date"     : "2026-01-20 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "[Ethernaut] 26.DoubleEntryPoint",
       "description" : "",
       "category" : "",
