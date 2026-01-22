@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "[Ethernaut] 32.Impersonator",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry, precompiled_contract, ecdsa",
+      "url"      : "/2026/01/23/impersonator",
+      "date"     : "2026-01-23 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "[Ethernaut] 31.Stake",
       "description" : "",
       "category" : "",
