@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "[Ethernaut] 33.Magic Animal Carousel",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry, low-level_data, bof",
+      "url"      : "/2026/01/23/magicanimalcarousel",
+      "date"     : "2026-01-23 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "[Ethernaut] 32.Impersonator",
       "description" : "",
       "category" : "",
