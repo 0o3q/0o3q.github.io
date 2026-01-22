@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Ethernaut] 30.HigherOrder
+title: "[Ethernaut] 30.HigherOrder"
 tags: blockchain ethernaut foundry Yul assembly bof
 ---
 

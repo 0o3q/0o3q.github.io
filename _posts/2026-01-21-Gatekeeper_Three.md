@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Ethernaut] 28.Gatekeeper Three
+title: "[Ethernaut] 28.Gatekeeper Three"
 tags: blockchain ethernaut foundry
 ---
 
