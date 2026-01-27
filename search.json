@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "[Ethernaut] 34.Bet House",
+      "description" : "",
+      "category" : "",
+      "tags"     : "blockchain, ethernaut, foundry, low-level_call, external_call",
+      "url"      : "/2026/01/27/bet-house",
+      "date"     : "2026-01-27 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "[Ethernaut] 33.Magic Animal Carousel",
       "description" : "",
       "category" : "",
