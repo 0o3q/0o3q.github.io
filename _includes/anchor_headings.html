@@ -81,11 +81,11 @@
 
       {% capture anchor %}<a {{ anchor }}>{{ include.anchorBody | replace: '%heading%', header | default: '' }}</a>{% endcapture %}
 
-      <!-- In order to prevent adding extra space after a heading, we'll let the 'anchor' value contain it -->
+      <!-- Keep the anchor marker attached to the adjacent heading text. -->
       {% if beforeHeading %}
-        {% capture anchor %}{{ anchor }} {% endcapture %}
+        {% capture anchor %}{{ anchor }}&nbsp;{% endcapture %}
       {% else %}
-        {% capture anchor %} {{ anchor }}{% endcapture %}
+        {% capture anchor %}&nbsp;{{ anchor }}{% endcapture %}
       {% endif %}
     {% endif %}
 

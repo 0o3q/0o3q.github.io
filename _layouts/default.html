@@ -5,25 +5,31 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1YYNPDG09Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1YYNPDG09Q');
-</script>
-
-
-
-
 <body>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YYNPDG09Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1YYNPDG09Q');
+  </script>
+
   <main>
     {% include anchor_headings.html html=content anchorBody="#" %}
   </main>
 
-  
+  <footer class="social-footer">
+    <div class="social-footer-icons">
+      <a href="https://github.com/0o3q" title="Github profile" target="_blank"
+        rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="{{site.url}}{{ site.baseurl }}/atom.xml" title="Feed RSS" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-rss" aria-hidden="true"></i></a>
+      <a href="https://github.com/0o3q/0o3q.github.io" title="Browse the code" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-code" aria-hidden="true"></i></a>
+    </div>
+  </footer>
 
   <script>
     function setTheme(theme) {
@@ -57,36 +63,19 @@ layout: compress
     }
   </script>
 
-
-
-</body>
-
-<footer class="social-footer">
-  <div class="social-footer-icons">
-    <a href="https://github.com/0o3q" title="Github profile" target="_blank"
-      rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
-    <a href="{{site.url}}{{ site.baseurl }}/atom.xml" title="Feed RSS" target="_blank" rel="noopener noreferrer"><i
-        class="fa fa-rss" aria-hidden="true"></i></a>
-    <a href="https://github.com/0o3q/0o3q.github.io" title="Browse the code" target="_blank" rel="noopener noreferrer"><i
-        class="fa fa-code" aria-hidden="true"></i></a>
-  </div>
-</footer>
-
-
-{% if page.url == '/' %}
-  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/simple-jekyll-search.js"></script>
-  <script>
-    var sjs = SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('search-results'),
-		      json: '{{ site.url }}{{ site.baseurl }}/search.json',
-      searchResultTemplate: '<p><a href="{url}" title="{description}">{title}</a></p>',
-      noResultsText: 'No results found..',
-      limit: 10,
-      fuzzy: true,
-    })
-  </script>
+  {% if page.url == '/' %}
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/simple-jekyll-search.js"></script>
+    <script>
+      var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('search-results'),
+        json: '{{ site.url }}{{ site.baseurl }}/search.json',
+        searchResultTemplate: '<p><a href="{url}" title="{description}">{title}</a></p>',
+        noResultsText: 'No results found..',
+        limit: 10,
+        fuzzy: true,
+      })
+    </script>
   {% endif %}
-
-
+</body>
 </html>

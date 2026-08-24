@@ -4,20 +4,23 @@ layout: default
 
 <section class="post">
   <div class="flex-row-between">
-      <a href="{{ site.url }}{{ site.baseurl }}">« Home</a>
+    <a href="{{ site.url }}{{ site.baseurl }}">« Home</a>
     <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
       <div></div>
     </button>
   </div>
-</section>
 
-  <h1 class="title">About</h1>
-  <span class="meta">
+  <h1 class="title">{{ page.title }}</h1>
+
   <article class="post-article">
     <div class="toc">
       {% include toc.html html=content %}
     </div>
   </article>
-  {{ content }}
 
-<nav class="post-nav"></nav>
+  <div class="about-content">
+    {{ content }}
+  </div>
+
+  <nav class="post-nav"></nav>
+</section>
