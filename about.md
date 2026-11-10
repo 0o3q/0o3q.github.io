@@ -80,7 +80,10 @@ toc: true
 * **DEF CON CTF 2026** — 7th Place *(Team Jinddabi's)*
 * **2026 HACKSIUM BUSAN** — Finalist *(Team 일단 조니워커블루를 마셔봐)*
 * **2026 KISIA 정보보호 경진대회** — 9th Place *(Team Whois)*
-* **AI 과학수사 챌린지 2026 (예선)** — 21th Place *(Team 0x616a6f75)* 
+* **AI 과학수사 챌린지 2026 (예선)** — 21th Place *(Team 0x616a6f75)*
+* **HITCON CTF 2026** — 4th Place *(Team Korea Hacking Club Alliance)*
+* **2026 AI Cyber Defense Contest** — Finalist *(Team 0x616a6f75)*
+* **KDFS Challenge 2026** — 장려상 *(Team Whois_DF)*
 
 ---
 
